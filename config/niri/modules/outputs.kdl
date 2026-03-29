@@ -14,7 +14,7 @@
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
     //mode "1920x1080@120.030"
     mode "1920x1080@60.000"
-    scale 1.25
+    scale 1
     transform "normal"
 
     // Position of the output in the global coordinate space.
