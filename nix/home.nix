@@ -9,7 +9,6 @@ in
   home.homeDirectory = "/home/nekrofrukt";
   home.stateVersion = "25.11";
 
-  # IMPORTS
   imports = [
     ../config/bash/bash.nix
     ../config/nvim/nvim.nix
@@ -49,6 +48,7 @@ in
     ".config/starship.toml".source = ../config/starship/starship.toml;
     ".config/gtk-4.0/gtk.css".source = ../config/gtk-4.0/gtk.css;
     ".config/gtk-4.0/settings.ini".source = ../config/gtk-4.0/settings.ini;
+    ".config/niri/".source = ../config/niri/;
     ".config/mako/config".source = ../config/mako/config;
 
     # Symlinks
