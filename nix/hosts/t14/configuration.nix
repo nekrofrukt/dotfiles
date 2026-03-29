@@ -13,7 +13,6 @@ in
       ./hardware-configuration.nix
       ../../modules/custom-configuration.nix
       ../../modules/niri.nix
-      #../../modules/oxwm.nix
       inputs.home-manager.nixosModules.default
     ];
 

@@ -52,10 +52,10 @@ in
     ".config/mako/config".source = ../config/mako/config;
 
     # Symlinks
-    ".config/fastfetch/config.jsonc".source = symLink "fastfetch/default.jsonc";
+    ".config/fastfetch/config.jsonc".source = symLink "fastfetch/nixos.jsonc";
     ".config/fastfetch/minimal.jsonc".source = symLink "fastfetch/minimal.jsonc";
     ".config/fastfetch/utils.jsonc".source = symLink "fastfetch/utils.jsonc";
-    ".config/ghostty/themes/Fotklanen".source = symLink "ghostty/themes/Fotklanen";
+    ".config/ghostty/themes/".source = symLink "ghostty/themes/";
     ".config/waybar/config.jsonc".source = symLink "waybar/config.jsonc";
     ".config/waybar/style.css".source = symLink "waybar/style.css";
     ".config/rofi".source = symLink "rofi";

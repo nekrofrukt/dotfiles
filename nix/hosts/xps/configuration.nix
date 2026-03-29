@@ -12,7 +12,7 @@ in
     [
       ./hardware-configuration.nix
       ../../modules/custom-configuration.nix
-      ../../modules/gnome.nix
+      ../../modules/niri.nix
       inputs.home-manager.nixosModules.default
     ];
 
