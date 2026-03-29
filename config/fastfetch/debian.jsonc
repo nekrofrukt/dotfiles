@@ -1,0 +1,57 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+	"display": {
+		"separator": " "
+  	},
+
+    "logo": {
+        "position": "top",
+        "type": "file",
+        "source": "~/src/nixos/dotfiles/fastfetch/logo/debian01.txt",
+        "padding": {
+            "top": 0,
+            "bottom": 4,
+            "left": 0,
+            "right": 0
+        }, 
+        "color": {
+            "1": "red",
+            "2": "green"
+        }
+    },
+
+    /*"logo": {
+        "type": "auto",
+        "padding": {
+            "top": 1,
+            "bottom": 0,
+            "left": 2,
+            "right": 4
+        }
+    },*/
+
+	"modules": [
+		//{"key": "{#37}we are all none .{#keys}", "type": "custom"},
+        //"break",
+		{"key": "{#36}┏󰒓 SYSTEM", "type": "custom"},
+		{"key": "{#36}┣OPS :", "type": "os"},
+		{"key": "{#36}┣KER :", "type": "kernel"},
+        {"key": "{#36}┗AGE :", "type": "command", "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"},
+        "break",
+		{"key": "{#36}┏󰨇 SOFTWARE", "type": "custom"},
+		{"key": "{#36}┣DSK :", "type": "de"},
+		{"key": "{#36}┣WNM :", "type": "wm"},
+		{"key": "{#36}┣PKG :", "type": "packages", "format": "{dpkg} (dpkg), {nix-user} (nixpkgs), {flatpak-all} (flatpak)"},
+		{"key": "{#36}┣TRM :", "type": "terminal"},
+		{"key": "{#36}┗SHL :", "type": "shell"},
+        "break",
+		{"key": "{#36}┏ HARDWARE", "type": "custom"},
+		{"key": "{#36}┣HST :", "type": "host"},
+		{"key": "{#36}┣CPU :", "type": "cpu"},
+		{"key": "{#36}┣RAM :", "type": "memory"},
+		{"key": "{#36}┗UPT :", "type": "uptime"},
+        "break",
+		//{"key": "{#36}┏ HEX", "type": "custom"},
+		{"key": "{#36}{#keys}", "type": "colors", "symbol": "circle"}
+	]
+}
