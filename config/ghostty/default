@@ -1,7 +1,6 @@
 # Visuals
-#theme = Snutkaffe
-#theme = TokyoNight
 theme = Fotklanen
+#theme = TokyoNight
 #theme = Aizen Dark
 window-padding-x = 10,4
 #window-decoration = none
