@@ -19,11 +19,11 @@
       rebuild_switch_t14 = "sudo nixos-rebuild switch --flake .#t14";
       rebuild_test_t14 = "sudo nixos-rebuild test --flake .#t14";
       
-      #rebuild_switch_xps = "sudo nixos-rebuild switch --flake .#xps";
-      #rebuild_test_xps = "sudo nixos-rebuild test --flake .#xps";
+      rebuild_switch_xps = "sudo nixos-rebuild switch --flake .#xps";
+      rebuild_test_xps = "sudo nixos-rebuild test --flake .#xps";
 
-      cd_etc = "cd /etc/nixos/";
-      cdnixos = "cd ~/src/nixos; git pull";
+      #cd_etc = "cd /etc/nixos/";
+      #cdnixos = "cd ~/src/nixos; git pull";
 
       ff = "fastfetch --config ~/.config/fastfetch/utils.jsonc";
       ff_m = "fastfetch --config ~/.config/fastfetch/minimal.jsonc";

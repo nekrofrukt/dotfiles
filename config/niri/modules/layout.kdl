@@ -1,7 +1,7 @@
 prefer-no-csd
 
 layout {
-    gaps 16
+    gaps 0
     struts {
         left 0
         right 0

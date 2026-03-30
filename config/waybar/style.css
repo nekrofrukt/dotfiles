@@ -17,7 +17,7 @@
     /*font-family: "JetBrainsMono Nerd Font", monospace;*/
     font-family: "Caskaydia Mono Nerd Font", monospace;
     /*font-family: "Departure Mono Nerd Font", monospace;*/
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -108,16 +108,36 @@ button:hover {
 }
 
 #cpu {
+    color: @bg;
+    background-color: @grn;
+    margin: 6px 4px 6px 4px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 16px;
+}
+
+#battery {
     color: @fg;
-    /*background-color: @bg2;
-    margin: 4px 4px 4px 4px;
-    padding: 4px 8px 4px 8px;
-    border-radius: 6px;*/
+    margin-right: 8px;
+}
+
+#battery.charging {
+    color: @grn;
+}
+
+#battery.plugged {
+    color: @fg;
+}
+
+#battery.warning {
+    color: @org;
+}
+#battery.critical {
+    color: @red;
 }
 
 #network {
-    color: @ylw;
-    margin-right: 8px;
+    color: @fg;
+    /*margin-right: 8px;*/
 }
 
 #network.ethernet {
@@ -125,7 +145,11 @@ button:hover {
 }
 
 #network.wifi {
-    color: @ylw;
+    color: @blu;
+    /*background-color: @ylw;
+    margin: 6px 4px 6px 4px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 16px;*/
 }
 
 #network.disconnected {

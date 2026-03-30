@@ -18,11 +18,10 @@
     
     "modules-right": [
         "pulseaudio",
-        "custom/sep",
-        "cpu",
-        "custom/sep",
+        //"custom/sep",
         "memory",
-        "network"
+        "network",
+        "battery"
     ],
 
     "niri/workspaces": {
@@ -85,8 +84,8 @@
     },
     
     "memory": {
-        /*"format": "󰆓 RAM {used}",*/
-        "format": "RAM {used}",
+        "format": "󰆓 {used}Gb",
+        //"format": "RAM {used}Gb",
         "tooltip-format": "{used}/{total} GiB"
     },
 
@@ -102,9 +101,9 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format": "{icon}",
+        "format-full": "{icon}",
+        "format-charging": "󱐋",
         "format-plugged": "",
         "format-alt": "{time} {icon}",
         "format-time": "{H}:{M}",
@@ -115,7 +114,7 @@
     
     "network": {
         "format-ethernet": "󰈀",
-        "format-wifi": "{icon}",
+        "format-wifi": "{icon} {essid}",
         "format-disconnected": "󰊠",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-icons": {
@@ -130,10 +129,10 @@
     },
 
     "pulseaudio": {
-        "format": "VOL {volume}%",
-        "format-muted": "󰝟 VOL {volume}%",
-        "format-bluetooth": "󰂯 VOL {volume}%",
-        "format-bluetooth-muted": "󰝟 VOL {volume}%",
+        "format": "󱄠 {volume}%",
+        "format-muted": "󰝟 {volume}%",
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-bluetooth-muted": "󰝟 {volume}%",
         "format-source": "{volume}%",
         "format-source-muted": " ",
         "format-icons": [

@@ -48,7 +48,6 @@ in
     ".config/starship.toml".source = ../config/starship/starship.toml;
     ".config/gtk-4.0/gtk.css".source = ../config/gtk-4.0/gtk.css;
     ".config/gtk-4.0/settings.ini".source = ../config/gtk-4.0/settings.ini;
-    ".config/niri/".source = ../config/niri/;
     ".config/mako/config".source = ../config/mako/config;
 
     # Symlinks
@@ -59,6 +58,7 @@ in
     ".config/waybar/config.jsonc".source = symLink "waybar/config.jsonc";
     ".config/waybar/style.css".source = symLink "waybar/style.css";
     ".config/rofi".source = symLink "rofi";
+    ".config/niri".source = symLink "niri";
   };
 
   # Home Manager can also manage your environment variables through
