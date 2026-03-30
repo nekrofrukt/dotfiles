@@ -7,7 +7,7 @@
     "logo": {
         "position": "top",
         "type": "file",
-        "source": "~/src/nixos/dotfiles/fastfetch/logo/debian01.txt",
+        "source": "~/src/dotfiles/config/fastfetch/logo/debian01.txt",
         "padding": {
             "top": 0,
             "bottom": 4,
