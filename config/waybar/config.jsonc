@@ -18,6 +18,7 @@
     
     "modules-right": [
         "pulseaudio",
+        "tray",
         //"custom/sep",
         "memory",
         "network",

@@ -1,6 +1,11 @@
 { config, pkgs, inputs, ... }:
 
 {
+  imports =
+    [
+      ./dropbox.nix
+    ];
+
   # NIRI, DM, X11 WINDOWING SYSTEM
   programs.niri.enable = true;
   services.displayManager.gdm.enable = true;
