@@ -71,6 +71,7 @@ button:hover {
 #pulseaudio,
 #tray {
     padding: 0 8px;
+    background-color: @bg;
 }
 
 #custom-sep {
