@@ -55,11 +55,16 @@ sh <(wget -qO - https://downloads.nordcdn.com/apps/linux/install.sh) -p nordvpn-
 # Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
+# Signal
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg;
+cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+rm signal-desktop-keyring.gpg signal-desktop.sources
+
 # Packages
 echo -e "\e[1mInstalling packages.\e[0m"
 
 sudo apt update
-sudo apt install -y 1password brave-browser ghostty flatpak gnome-software-plugin-flatpak /tmp/dropbox.deb ripgrep ufw tree starship fastfetch nordvpn spotify-client vlc btop transmission ranger
+sudo apt install -y 1password brave-browser ghostty flatpak gnome-software-plugin-flatpak ripgrep ufw tree starship fastfetch nordvpn spotify-client vlc btop transmission ranger signal-desktop /tmp/dropbox.deb
 
 echo -e "\e[1mEnabling firewall.\e[0m"
 sudo ufw enable
